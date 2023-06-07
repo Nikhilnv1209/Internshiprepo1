@@ -12,43 +12,45 @@ const Toggles = () => {
   };
 
   return (
-    <div className="toggles">
-      <Link to="/">
-        <button
-          className={`btn btn-primary btn-all-badges
+    <div className="toggles__container">
+      <div className="toggles">
+        <Link to="/">
+          <button
+            className={`btn btn-primary btn-all-badges
       ${active === "/" ? "active" : ""}`}
-          onClick={() => handleToggle("/")}
-        >
-          All Badges
-        </button>
-      </Link>
-      <Link to="/popular">
-        <button
-          className={`btn btn-primary btn-popular-badges
+            onClick={() => handleToggle("/")}
+          >
+            All Badges
+          </button>
+        </Link>
+        <Link to="/popular">
+          <button
+            className={`btn btn-primary btn-popular-badges
       ${active === "/popular" ? "active" : ""}`}
-          onClick={() => handleToggle("/popular")}
-        >
-          Popular Badges
-        </button>
-      </Link>
-      <Link to="/ongoing">
-        <button
-          className={`btn btn-primary btn-ongoing-badges
+            onClick={() => handleToggle("/popular")}
+          >
+            Popular Badges
+          </button>
+        </Link>
+        <Link to="/ongoing">
+          <button
+            className={`btn btn-primary btn-ongoing-badges
       ${active === "/ongoing" ? "active" : ""}`}
-          onClick={() => handleToggle("/ongoing")}
-        >
-          Ongoing Badges
-        </button>
-      </Link>
-      <Link to="/earned">
-        <button
-          className={`btn btn-primary btn-earned-badges
-      ${active === "/earned" ? "active" : ""}`}
-          onClick={() => handleToggle("/earned")}
-        >
-          Earned Badges
-        </button>
-      </Link>
+            onClick={() => handleToggle("/ongoing")}
+          >
+            Ongoing Badges
+          </button>
+        </Link>
+        <Link to="/earned">
+          <button
+            className={`btn btn-primary btn-earned-badges
+          ${active === "/earned" ? "active" : ""}`}
+            onClick={() => handleToggle("/earned")}
+          >
+            Earned Badges
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };

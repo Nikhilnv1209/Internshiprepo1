@@ -4,3 +4,11 @@
     padding-top: 4rem/* 64px */;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 768px){
+    .badgescontainer{
+        width: 100%;
+        margin: 0 1rem;
+    }
+}
+    

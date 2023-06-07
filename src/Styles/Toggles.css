@@ -1,38 +1,70 @@
+.toggles__container {
+  width: 42rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem 0;
+}
+
 .toggles {
-    border: 1.5px solid #E6E6E6;
-    border-radius: 0.5rem;
-    width: 42rem;
-    margin: 2rem auto 0 auto;
-    display: flex;
-    justify-content: space-between;
+  border: 1.5px solid #E6E6E6;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  border-radius: 0.5rem
+    /* 8px */
+  ;
+  padding: 0.75rem 2rem;
+  font-size: 15px;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 0.5rem
+}
+
+.btn-primary {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-primary.active {
+  background-color: #0e1a45;
+  color: #fff;
+}
+
+.btn-all-badges {
+  padding-left: 2rem
+    /* 32px */
+  ;
+  padding-right: 2rem
+    /* 32px */
+  ;
+}
+
+.btn-popular-badges,
+.btn-ongoing-badges,
+.btn-earned-badges {
+  padding-left: 1.5rem
+    /* 24px */
+  ;
+  padding-right: 1.5rem
+    /* 24px */
+  ;
+}
+
+
+@media screen and (max-width: 768px) {
+ .btn{
+  font-size: 2.5vw;
+ }
+}
+
+@media screen and (max-width: 425px) {
+  .btn{
+    padding: 0.5rem 0.7rem;
   }
-  
-  .btn {
-    border-radius: 0.5rem/* 8px */;
-    padding: 0.75rem 2rem;
-    font-size: 15px;
-    line-height: 1.5;
-    cursor: pointer;
-    border-radius: 0.5rem
-  }
-  
-  .btn-primary {
-    background-color: #fff;
-    color: #000;
-  }
-  
-  .btn-primary.active {
-    background-color: #0e1a45;
-    color: #fff;
-  }
-  
-  .btn-all-badges {
-    padding-left: 2rem/* 32px */;
-    padding-right: 2rem/* 32px */;
-  }
-  
-  .btn-popular-badges,.btn-ongoing-badges, .btn-earned-badges {
-    padding-left: 1.5rem/* 24px */;
-    padding-right: 1.5rem/* 24px */;
-  }
-  
+}
+
