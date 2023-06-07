@@ -69,3 +69,39 @@
     object-fit: fill;
   }
   
+  @media screen and (max-width: 425px) {
+    .profile-card {
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin-top: 1rem;
+      margin-bottom: 2.4rem;
+    }
+    .profile-card aside:first-of-type {
+      width: 100%;
+      padding: 0 .5rem;
+      /* border: 1px solid red; */
+    }
+
+    .profile-card h1{
+      font-size: 6vw;
+    }
+
+    .profile-card p{
+      font-size: 3vw;
+      width: 100%;
+      line-height: normal;
+    }
+
+    .profile-card aside:last-of-type{
+      right: 0;
+    }
+    .profile-card aside img:nth-child(1){
+      display: none;
+    }
+
+    .profile-card div{
+      scale: 0.8;
+    }
+
+  }
