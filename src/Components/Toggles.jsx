@@ -14,38 +14,38 @@ const Toggles = () => {
   return (
     <div className="toggles__container">
       <div className="toggles">
-        <Link to="/">
+        <Link to="/badges">
           <button
             className={`btn btn-primary btn-all-badges
-      ${active === "/" ? "active" : ""}`}
-            onClick={() => handleToggle("/")}
+      ${active === "/badges" ? "active" : ""}`}
+            onClick={() => handleToggle("/badges")}
           >
             All Badges
           </button>
         </Link>
-        <Link to="/popular">
+        <Link to="/badges/popular">
           <button
             className={`btn btn-primary btn-popular-badges
-      ${active === "/popular" ? "active" : ""}`}
-            onClick={() => handleToggle("/popular")}
+      ${active === "/badges/popular" ? "active" : ""}`}
+            onClick={() => handleToggle("/badges/popular")}
           >
             Popular Badges
           </button>
         </Link>
-        <Link to="/ongoing">
+        <Link to="/badges/ongoing">
           <button
             className={`btn btn-primary btn-ongoing-badges
-      ${active === "/ongoing" ? "active" : ""}`}
-            onClick={() => handleToggle("/ongoing")}
+      ${active === "/badges/ongoing" ? "active" : ""}`}
+            onClick={() => handleToggle("/badges/ongoing")}
           >
             Ongoing Badges
           </button>
         </Link>
-        <Link to="/earned">
+        <Link to="/badges/earned">
           <button
             className={`btn btn-primary btn-earned-badges
-          ${active === "/earned" ? "active" : ""}`}
-            onClick={() => handleToggle("/earned")}
+          ${active === "/badges/earned" ? "active" : ""}`}
+            onClick={() => handleToggle("/badges/earned")}
           >
             Earned Badges
           </button>

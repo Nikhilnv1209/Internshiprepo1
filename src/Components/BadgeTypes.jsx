@@ -38,12 +38,12 @@ const BadgeTypes = () => {
   return (
     <div className="Badgetypecontainer">
       {slice.map((badge) => {
-        const print = userbadgesids.has(badge.id);
+        const earnedbadge = userbadgesids.has(badge.id);
         return (
           <Badgesitems
             key={badge.id}
             badgeid={badge.id}
-            earned={print}
+            earned={earnedbadge}
             badgeimage={badge.img}
             badgetype={badgetype}
           />

@@ -17,13 +17,13 @@ const Badgepage = () => {
 
   function getTitle(pathname) {
     switch (pathname) {
-      case "/":
+      case "/badges":
         return "Earn a badge";
-      case "/popular":
+      case "/badges/popular":
         return "Popular Badges";
-      case "/ongoing":
+      case "/badges/ongoing":
         return "Ongoing Badges";
-      case "/earned":
+      case "/badges/earned":
         return "Earned Badges";
       default:
         return "Not Found";
